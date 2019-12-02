@@ -1,11 +1,7 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
 <!-- get on correct post or first if we don't have one -->
-{% if page.collection %}
-    {% assign current = page %}
-{% else %}
-    {% assign current = site.posts[0] %}
-{% endif %}
+
 
 <head>
 	<style>*{
@@ -79,13 +75,13 @@ section h1{
 }</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	{% if page.robots %}
-    	<meta Qing_Zhang="robots" content="{{ page.robots }}" />
-	{% endif %}
-	{{ seo }}
+	
+    	<meta Qing_Zhang="robots" content="noindex" />
+	
+	
 	cscript src="https://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+	<script src="/assets/js/respond.js"></script>
 	<!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -111,7 +107,7 @@ section h1{
     </span>
   </div>
 </nav>
-<div class="About">
+<div class="content">
 
   <section id="About">
     <h1>About</h1>
@@ -206,7 +202,7 @@ t</p>
     </div>
   </section>
 
-  <footer id="reference">
+  <footer id="footer">
     <section id="reference">
       <h1>Reference</h1>
       <div class="no-img">
